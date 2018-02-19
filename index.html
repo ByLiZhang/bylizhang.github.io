@@ -1,61 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="game">
 <head>
 	<meta charset="UTF-8">
-	<title>My Calculator</title>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="main.js"></script>
+	<title>The Match of Thrones</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="howler.min.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
-	<section class="container">
-		<header>CALCULATOR</header>
-    <div class="panel">
-  		<div class="main">
-  			<div class="rectangular">
-  				<div class="screen"></div>
-  				<div class="buttons">
-  					<div class="button_set1">
-  						<div class="clear">
-  							<button>C</button>
-  							<button>CE</button>
-  						</div>
-  						<div class="numbers">
-  							<button>7</button>
-  							<button>8</button>
-  							<button>9</button>
-  							<button>4</button>
-  							<button>5</button>
-  							<button>6</button>
-  							<button>1</button>
-  							<button>2</button>
-  							<button>3</button>
-  							<button>0</button>
-  							<button>.</button>
-  							<button>=</button>
-  						</div>
-  					</div>
-  					<div class="operators">
-  						<button value="/">&divide</button>
-  						<button value="*">&times</button>
-  						<button value="-">-</button>
-  						<button value="+">+</button>
-  					</div>
-  				</div>						
-  			</div>
-  		</div>
-      <div class="expansion">
-        <div class="ext_operators">
-          <button value="sin">sin</button>  
-          <button value="cos">cos</button>  
-          <button value="power">X<sup>Y</sup></button>  
-          <button value="root"><sup>Y</sup>&#8730X</button> 
-          <button value="log">log</button>
-          <button value="factorial">n!</button>
-          <button class="intro">About Me</button>  
-        </div>
-      </div>
-    </div>
-	</section>
+	<div id="container">
+		<header>
+			<div class="header_img"><img src="img/Logo.png" alt="Game logo"></div>
+			<div class='header_text'>
+				<p class="title"><a href="about.html">GAME MENU</a></p>
+				<p class="phrase">In the Match of Thrones, you match or you perish</p>
+			</div>
+		</header>
+		<section class="main_body">
+			<div class="stats">
+				<div class="games-played">
+				<p class="label">Game played: <span class="value"></span></p>
+				</div>
+				<div class="attempts">
+				<p class="label">Total Attempts: <span class="value"></span></p>
+				</div>
+				<div class="accuracy">
+				<p class="label">Overall Accuracy: <span class="value"></span></p>
+				</div>
+				<div class="crown">
+					<img src="img/crown_hand.png" alt="crown image">
+				</div>
+				<button class="reset">Reset Game</button></div>
+      <div id="game-area">
+				<div class="win_message hide"><span></span></div>
+			</div>
+		</section>
+		
+	</div>
 </body>
 </html>
